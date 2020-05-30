@@ -222,7 +222,7 @@ header > a:hover, header > div > a:hover{
     display: flex;    
 }
 .adaptive-std{
-    display: flex;
+    /* display: flex; */
     margin: 0 300px 0 300px;
 }
 .title{
@@ -684,4 +684,70 @@ header > a:hover, header > div > a:hover{
     display: flex;
     flex-flow: column nowrap;
     background-color: #0A083A;
+}
+
+
+
+
+/* FOOTER */
+#footer{
+    font-family: var(--Inter);
+    margin: 50px 0 50px 0;    
+}
+#footer > div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+#footer > div > div{
+    margin: 25px 0 0 0;
+}
+#footer .one{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+#footer .one > a{
+    margin: 0 18px 0 18px;
+}
+#footer .one, #footer .two{
+    font-family: inherit;
+}
+#footer .two, #footer .coperate{
+    color: #CFCFCF;
+}
+.coperate_f{
+    display: none;
+}
+@media (max-width: 830px) {
+    #footer{
+        margin: 50px 15px 50px 0;
+    }
+    #footer .one{
+        display: flex;
+        flex-flow: column nowrap;
+        margin-left: -15px;
+        margin-bottom: 11px;
+    }
+    #footer .one > a {
+        margin: 0 18px 9px 18px;
+    }
+    #footer > div {
+        align-items: flex-start;
+        margin-left: 15px
+    }
+    #footer > div > .coperate{
+        display: none;
+    }
+    .coperate_f{
+        display: flex;
+    }
+    #footer .two > .telegram_f{
+        order: 2;
+    }
+    #footer .two{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
