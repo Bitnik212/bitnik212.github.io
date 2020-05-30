@@ -81,6 +81,7 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     height: 55px;
     font-family: var(--Object-Sans);
     font-weight: normal;
@@ -139,20 +140,77 @@ header > a:hover, header > div > a:hover{
     height: 18px;
     margin-left: 10px;
 }
+.rightBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightBox > a {
+    margin: 0 18px 0 18px;
+}
+.rightBox > a:last-of-type{
+    margin: 0 0 0 18px;
+}
+.rightBox > .telefon, .rightBox > .email{
+    display: none;
+}
+.email_smal{
+    display: none;
+    transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+}
+.email_smal:hover{
+    transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    background-color: #000;
+    color: white;
 
+}
 @media (max-width: 830px) {
     .sendTelegram, .telefon, .email{
         display: none;
     }
-    header{
-        justify-content: center;
+    .rightBox{
+        display: none;
     }
-
+    
+    .email_smal{
+        display: flex;
+        padding: 10px 15px 10px 15px;
+        background: #E7E7E7;
+        border-radius: 34px;
+        
+    }
     .fio{
         width: 90px;
     }
+    .leftBox > .fio{
+        max-width: 130px;
+    }
 }
-
+@media (min-width: 830px) and (max-width: 1100px) {
+    .sendTelegram{
+        padding: 0px 10px 00px 10px;
+        border-radius: 50%;
+        margin-left: 0;
+        background: none;
+    }
+    .sendTelegram > span{
+        display: none;
+    }
+    .logoTelegram{
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+    }
+    .leftBox > .telefon, .leftBox > .email{
+        display: none;
+    }
+    .rightBox > .telefon, .rightBox > .email{
+        display: block;
+    }
+    .leftBox > .fio{
+        max-width: 130px;
+    }
+}
 
 
 
@@ -173,7 +231,7 @@ header > a:hover, header > div > a:hover{
     font-weight: normal;
     font-size: 48px;
     line-height: 49px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .tagsUnderTitle{
     display: flex;
@@ -219,7 +277,7 @@ header > a:hover, header > div > a:hover{
         text-align: left;
     }
     #main-section, .section-std{
-        margin: 50px 16px 0 16px;
+        margin: 0px 7px 0 7px;
     }
     .adaptive-std{
         margin: 0 30px 0 30px;
@@ -332,7 +390,7 @@ header > a:hover, header > div > a:hover{
 }
 @media (max-width: 830px){
     #section_two > div , .section-std > div{
-        margin: 50px 16px 150px 16px;
+        margin: 36px 16px 150px 16px;
     }
     .scrollBox_nav_img{
         height: unset;
@@ -351,7 +409,7 @@ header > a:hover, header > div > a:hover{
         align-items: center;
     }
     #section_two > div, .section-std > div{
-        margin: 200px 300px 0 300px;
+        margin: 50px 300px 50px 300px;
     }
 }
 @media (max-width: 1300px){
@@ -496,7 +554,7 @@ header > a:hover, header > div > a:hover{
     
 }
 #section_three_images_phone{
-    width: 300px;
+    width: 250px;
     margin-left: 100px;
     
 }
