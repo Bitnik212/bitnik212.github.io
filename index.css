@@ -730,7 +730,7 @@ header > a:hover, header > div > a:hover{
         margin-bottom: 11px;
     }
     #footer .one > a {
-        margin: 0 18px 9px 18px;
+        margin: 0 18px 25px 18px;
     }
     #footer > div {
         align-items: flex-start;
@@ -749,5 +749,8 @@ header > a:hover, header > div > a:hover{
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+    #footer > div > div{
+        margin: 45px 0 0 0;
     }
 }
