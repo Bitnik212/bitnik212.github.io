@@ -691,7 +691,7 @@ header > a:hover, header > div > a:hover{
 
 /* FOOTER */
 #footer{
-    font-family: var(--Inter);
+    font-family: var(--Object-Sans);
     margin: 50px 0 50px 0;    
 }
 #footer > div{
