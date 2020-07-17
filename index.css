@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @font-face {
     font-family: Panamera; /* Гарнитура шрифта */
     /*font-weight: Regular;*/
@@ -472,11 +473,10 @@ header > a:hover, header > div > a:hover{
     position: relative;
     background: none;
     border: none;
-    /*width: 15px;*/
     height: 15px;
     outline: none;
     cursor: pointer;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -719,6 +719,50 @@ header > a:hover, header > div > a:hover{
 .coperate_f{
     display: none;
 }
+
+section .rightTextAndPhone .rightPhone, section .rightTextAndPhone .rightText{
+    width: 190px;
+}
+section .rightTextAndPhone .rightPhone{
+    position: relative;
+}
+section .rightTextAndPhone{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    margin-top: -525px;
+    margin-right: -95px;
+}
+section .rightTextAndPhone .rightText{
+    margin-right: -118px;
+    margin-bottom: 20px;
+}
+section .rightTextAndPhone .rightText > strong{
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1B1B1B;
+}
+section .rightTextAndPhone .rightText > .big{
+    font-size: 44px;
+    line-height: 54px;
+}
+section .rightTextAndPhone .rightText > span{
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #8C8BA2;
+}
+@media (max-width:1230px){
+    section .rightTextAndPhone{
+        display: none;
+    }
+}
+
 @media (max-width: 830px) {
     #footer{
         margin: 50px 15px 50px 0;
@@ -753,4 +797,28 @@ header > a:hover, header > div > a:hover{
     #footer > div > div{
         margin: 45px 0 0 0;
     }
+}
+
+#section_four .rightTextAndPhone .rightText{
+   width: 170px;
+}
+#section_four .rightTextAndPhone .rightText > strong{
+    font-family: 'Montserrat', sans-serifnherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+#section_four .rightTextAndPhone .rightText > .big{
+    font-size: 44px;
+    line-height: 54px;
+}
+#section_four .rightTextAndPhone .rightText > span{
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #75911C;
 }
