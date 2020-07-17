@@ -73,10 +73,6 @@ body{
     padding: 0;
 }
 
-
-
-
-
 /* HEADER */
 header{
     display: flex;
@@ -163,7 +159,6 @@ header > a:hover, header > div > a:hover{
     transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     background-color: #000;
     color: white;
-
 }
 @media (max-width: 830px) {
     .sendTelegram, .telefon, .email{
@@ -172,13 +167,11 @@ header > a:hover, header > div > a:hover{
     .rightBox{
         display: none;
     }
-    
     .email_smal{
         display: flex;
         padding: 10px 15px 10px 15px;
         background: #E7E7E7;
         border-radius: 34px;
-        
     }
     .fio{
         width: 90px;
@@ -213,17 +206,12 @@ header > a:hover, header > div > a:hover{
     }
 }
 
-
-
-
-
 /* Шаблон и первый блок */
 #main-section, .section-std{
     margin: 200px 300px 100px 300px;
     display: flex;    
 }
 .adaptive-std{
-    /* display: flex; */
     margin: 0 300px 0 300px;
 }
 .title{
@@ -294,12 +282,6 @@ header > a:hover, header > div > a:hover{
         margin-left: 0;
         margin-bottom: 10px;
     }
-
-}
-@media (min-width: 1300px) and (max-width: 1500px){
-    .adaptive-std{
-       
-    }
 }
 @media (min-width: 1500px){
     .section-text{
@@ -309,11 +291,6 @@ header > a:hover, header > div > a:hover{
         justify-content: center;
     }
 }
-
-
-
-
-
 
 /* Блок второй */
 #section_two{
@@ -354,7 +331,8 @@ header > a:hover, header > div > a:hover{
     margin-top: -6px;
 }
 .scrollBox_nav_img > img{    
-    max-width: 100%;    
+    max-width: 100%; 
+    width: -webkit-fill-available;   
 }
 .scrollBox_nav_img{
     overflow-y: scroll;
@@ -383,11 +361,10 @@ header > a:hover, header > div > a:hover{
     background: url("images/Rentby_bg.png") top no-repeat;
     background-position: right;
     background-size: cover;
-    /*position: absolute;*/
     z-index: -999;
     height: 650px;
     width: 100%;
-    margin-top: -450px;
+    margin-top: -600px;
 }
 @media (max-width: 830px){
     #section_two > div , .section-std > div{
@@ -434,22 +411,22 @@ header > a:hover, header > div > a:hover{
     }
 }
 
-
-
 /* Уведомление о печеньях(куки)  */
+.cookie_alert_box{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -100px;
+}
 #cookie_alert{
     max-width: 350px;    
     background: #171720;
     z-index: 100;
     border-radius: 8px;
     box-shadow: 0px 4px 18px rgba(32, 32, 44, 0.2);
-    margin-top: -150px;
     color: white;    
     display: flex;
     align-items: center;
     overflow: hidden;
-    position: absolute;
-    right: 1px;    
 }
 #cookie_alert > img{
     width: 110px;
@@ -467,7 +444,6 @@ header > a:hover, header > div > a:hover{
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
-
 }
 .cookie_alert_close{
     position: relative;
@@ -476,7 +452,6 @@ header > a:hover, header > div > a:hover{
     height: 15px;
     outline: none;
     cursor: pointer;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -535,11 +510,6 @@ header > a:hover, header > div > a:hover{
     cursor: pointer;
 }
 
-
-
-
-
-
 /* Блок третий */
 #section_three{
     display: flex;
@@ -579,7 +549,6 @@ header > a:hover, header > div > a:hover{
     #section_three_images_pattern{
         display: block;
         height: 800px;
-        
     }
 }
 @media (max-width: 830px){
@@ -590,12 +559,9 @@ header > a:hover, header > div > a:hover{
         width: 100vw;
         margin: 0;
         justify-content: center;
-        /* background: url("images/Pattern.png")  top no-repeat;
-        background-size: cover; */
     }
     #section_three_images_phone{
         margin: 0;
-        
     }
     #section_three_images_pattern{
         display: none;
@@ -610,8 +576,6 @@ header > a:hover, header > div > a:hover{
     #section_three > div{
         width: 800px;
     }
-    
-
     .section_three_images{
         margin-left: 500px;
         background-size: contain;
@@ -650,12 +614,6 @@ header > a:hover, header > div > a:hover{
     }
 }
 
-
-
-
-
-
-
 /* Блок четвертый */
 #section_four{
     display: flex;
@@ -674,20 +632,12 @@ header > a:hover, header > div > a:hover{
    
 }
 
-
-
-
-
-
 /* Блок пятый */
 #section_five{
     display: flex;
     flex-flow: column nowrap;
     background-color: #0A083A;
 }
-
-
-
 
 /* FOOTER */
 #footer{
