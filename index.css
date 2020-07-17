@@ -800,7 +800,9 @@ section .rightTextAndPhone .rightText > span{
 }
 
 #section_four .rightTextAndPhone .rightText{
-   width: 170px;
+    width: 185px;
+    margin-right: -118px;
+    margin-bottom: 20px;
 }
 #section_four .rightTextAndPhone .rightText > strong{
     font-family: 'Montserrat', sans-serifnherit;
