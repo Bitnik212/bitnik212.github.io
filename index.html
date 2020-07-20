@@ -69,8 +69,8 @@
                     <div class="scrollBox_nav_img" style="height: unset; overflow-y: hidden; " ><img src="images/Rentby2(1).png"></div>
                     <div class="scrollBox_nav_close"></div>
                     <div class="scrollBox_underNavText" style="color: white">Станица поиска недвижимости</div>
-                    <div class="cookie_alert_box">
-                        <div id="cookie_alert">
+                    <div class="cookie_alert_box" id="cookie_alert_close">
+                        <div class="cookie_alert">
                             <img src="images/cookies.svg">
                             <div class="cookie_alertBox">
                                 <div class="cookie_alertText">We use cookies to save<br> your favorites and viewed rentals
@@ -90,11 +90,30 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
         <div class="scrollBox_two_bg"></div>
-        
+        <div class="cookie_alert_box adaptive-std" id="cookie_alert_altclose">
+            <div class="cookie_alert">
+                <img src="images/cookies.svg">
+                <div class="cookie_alertBox">
+                    <div class="cookie_alertText">We use cookies to save your favorites and viewed rentals
+                        <button class="cookie_alert_close" onclick="cookie_alert_close()">
+                            <div></div>
+                            <div></div>
+                        </button>
+                    </div>
+                    <div class="cookie_alertSmallBox">
+                        <span>
+                            <span class="cookie_alertSmallBoxText">Read more</span>
+                            <div class="cookie_alertSmallBoxTextUnderLine"></div>
+                        </span>
+                        <button class="cookie_alertText_Confirm" onclick="cookie_alert_close()">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixCookes" id="fixCookes"></div>
         <section id="section_three" class="section-std"> 
             <div style="margin-bottom: 0;">       
                 <div class="title" >Мобильное приложение «Вабанк»</div>
@@ -176,12 +195,9 @@
                     <a class="telefon_f" href="tel:+7 999 211 65 91">+7 999 211 65 91</a>
                     <a class="email_f" href="mailto:Dima1Cohin@gmail.com">Dima1Cohin@gmail.com</a>
                     <a class="telegram_f" href="tg://resolve?domain=Uzzaw">Telegram</a>
-                </div>
-                <div class="two">
-                    <a class="telegram_f" href="tg://resolve?domain=Bitnik212">Developed by Bit</a>  
-                    <div class="coperate_f">©2020</div>                       
-                </div>
-                <div class="coperate">©2020</div>                
+                    <a class="telegram_ff" href="tg://resolve?domain=Bitnik212">Developed by Bit</a>  
+                    <div class="coperate_fF">©2020</div>
+                </div>                               
             </div>            
         </footer>
     <script type="application/javascript" src="chcolor.js"></script>

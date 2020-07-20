@@ -415,9 +415,9 @@ header > a:hover, header > div > a:hover{
 .cookie_alert_box{
     display: flex;
     justify-content: flex-end;
-    margin-top: -100px;
+    margin-top: -130px;
 }
-#cookie_alert{
+.cookie_alert{
     max-width: 350px;    
     background: #171720;
     z-index: 100;
@@ -428,7 +428,7 @@ header > a:hover, header > div > a:hover{
     align-items: center;
     overflow: hidden;
 }
-#cookie_alert > img{
+.cookie_alert > img{
     width: 110px;
     height: 110px;    
     margin: 20px 0 0 0 ;    
@@ -509,6 +509,18 @@ header > a:hover, header > div > a:hover{
     outline: none;
     cursor: pointer;
 }
+#cookie_alert_altclose{
+    display: none;
+    margin-top: -140px;
+}
+#cookie_alert_altclose > .cookie_alert{
+    margin: 0 -10px 0 -10px;
+}
+.fixCookes{
+    height: 10px;
+    width: 100%;
+    display: none;
+}
 
 /* Блок третий */
 #section_three{
@@ -571,6 +583,16 @@ header > a:hover, header > div > a:hover{
         background-position: right;
         background-size: cover;
     }
+    #cookie_alert_close{
+        display: none;
+    }
+    #cookie_alert_altclose{
+        display: flex;
+    }
+    .fixCookes{
+        display: block;
+    }
+    
 }
 @media (min-width: 830px) and (max-width: 1300px){
     #section_three > div{
@@ -582,6 +604,9 @@ header > a:hover, header > div > a:hover{
     }
     #section_three_images_phone{
         margin: 0 50px 0 50px;
+    }
+    #cookie_alert_close{
+        display: flex;
     }
 }
 #section_three_one{
@@ -773,4 +798,103 @@ section .rightTextAndPhone .rightText > span{
     font-size: 17px;
     line-height: 21px;
     color: #75911C;
+}
+
+
+/* FOOTER */
+#footer{
+    font-family: var(--Object-Sans);
+    font-size: 17px;
+    margin: 50px 0 50px 0;    
+}
+#footer > div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+#footer > div > div{
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+#footer .one{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+#footer .one > a, #footer .one > div{
+    margin: 0 18px 0 18px;
+}
+#footer .one, #footer .two{
+    font-family: inherit;
+}
+#footer .coperate{
+    color: #CFCFCF;
+}
+
+@media (max-width: 830px) {
+    #footer{
+        margin: 50px 15px 50px 0;
+    }
+    #footer .one{
+        display: flex;
+        flex-flow: column nowrap;
+        margin-left: -15px;
+        margin-bottom: 11px;
+    }
+    #footer .one > a, #footer .one > div {
+        margin: 0 18px 25px 18px;
+    }
+    #footer > div {
+        align-items: flex-start;
+        margin-left: 15px
+    }
+    .coperate_f{
+        display: flex;
+    }
+    #footer > div > div{
+        margin: 45px 0 0 0;
+    }
+}
+
+#paralax-test, .section_four_paralax{
+    overflow: hidden;
+    /*padding: 100px 0;*/
+
+}
+
+#oneimg{
+    background: url('images/Rentby_web.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 273%;
+    /*top: -220%;*/
+    /*bottom: 100%;*/
+}
+#twoimg{
+    background: url('images/stok.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 273%;
+}
+#oneimg_m{
+    width: 100%;
+}
+
+
+@media (min-width: 830px) {
+    #scrollBox_two > div > div{
+        min-width: 800px;
+    }
+    #scrollBox_two{
+        margin-top: 500px;
+
+    }
+}
+@media (min-width: 1700px){
+    #scrollBox_two{
+        margin-top: 830px;
+    }
 }
