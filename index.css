@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @font-face {
@@ -71,29 +78,49 @@ a:link, a, a:visited, a:checked{
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* HEADER */
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 55px;
     font-family: var(--Object-Sans);
     font-weight: normal;
     font-size: 17px;
     padding: 25px;
+    -webkit-transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
 }
 header > a:hover, header > div > a:hover{
+    -webkit-transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     color: #c4c4c4;
 }
 .leftBox{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .leftBox > a{
     margin: 0 25px 0 25px;
@@ -106,6 +133,8 @@ header > a:hover, header > div > a:hover{
     margin-right: 0;
 }
 .fio{
+    -webkit-transition: all 0.4s ease-in 0s;
+    -o-transition: all 0.4s ease-in 0s;
     transition: all 0.4s ease-in 0s;
     margin-right: 40px !important;
 }
@@ -114,17 +143,27 @@ header > a:hover, header > div > a:hover{
     width: 52px;
 }
 .sendTelegram {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 45px;
     padding:0  25px 0 25px;
+    background: -o-linear-gradient(8.86deg, #1E96C8 0%, #37AEE2 100%);
     background: linear-gradient(81.14deg, #1E96C8 0%, #37AEE2 100%);
     border-radius: 34px;
     margin-left: 20px;
 }
 .sendTelegram:hover{
+    background: -o-linear-gradient(8.86deg, #3eaee3 0%, #56c9fd 100%);
     background: linear-gradient(81.14deg, #3eaee3 0%, #56c9fd 100%);
+    -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    -o-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
 }
 .sendTelegram > span{
@@ -138,9 +177,15 @@ header > a:hover, header > div > a:hover{
     margin-left: 10px;
 }
 .rightBox{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .rightBox > a {
     margin: 0 18px 0 18px;
@@ -153,9 +198,13 @@ header > a:hover, header > div > a:hover{
 }
 .email_smal{
     display: none;
+    -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    -o-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
 }
 .email_smal:hover{
+    -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    -o-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     background-color: #000;
     color: white;
@@ -168,6 +217,8 @@ header > a:hover, header > div > a:hover{
         display: none;
     }
     .email_smal{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 10px 15px 10px 15px;
         background: #E7E7E7;
@@ -209,6 +260,8 @@ header > a:hover, header > div > a:hover{
 /* Шаблон и первый блок */
 #main-section, .section-std{
     margin: 200px 300px 100px 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
 }
 .adaptive-std{
@@ -223,6 +276,8 @@ header > a:hover, header > div > a:hover{
     margin-bottom: 35px;
 }
 .tagsUnderTitle{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 17px;
     line-height: 17px;
@@ -230,8 +285,13 @@ header > a:hover, header > div > a:hover{
     font-style: normal;
     font-weight: normal;
     color: #2B2A30;
-    align-items: center;
-    flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     margin-bottom: 45px;
 }
 .tagsUnderTitle > div:first-child{
@@ -258,7 +318,9 @@ header > a:hover, header > div > a:hover{
         width: 800px;
     }
     #main-section, .section-std, .adaptive-std{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 @media (max-width: 1300px){
@@ -272,8 +334,13 @@ header > a:hover, header > div > a:hover{
         margin: 0 30px 0 30px;
     }
     .tagsUnderTitle{
-        justify-content: flex-start;
-        flex-flow: row wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
     }
     .tagsUnderTitle_first{
         margin-bottom: 0;
@@ -288,14 +355,21 @@ header > a:hover, header > div > a:hover{
         width: 800px;
     }
     #main-section, .section-std, .adaptive-std{        
-        justify-content: center;
+        -webkit-box-pack: center;        
+            -ms-flex-pack: center;        
+                justify-content: center;
     }
 }
 
 /* Блок второй */
 #section_two{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     z-index: 100;
 }
 #section_two > div{
@@ -307,9 +381,15 @@ header > a:hover, header > div > a:hover{
     background: #EFF0F2;
     height: 20px;
     border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-bottom: -1px;
 }
 .scrollBox_nav_open > div{
@@ -384,7 +464,9 @@ header > a:hover, header > div > a:hover{
 }
 @media (min-width: 830px) and (max-width: 1300px){
     #section_two, .section-std{
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     #section_two > div, .section-std > div{
         margin: 50px 300px 50px 300px;
@@ -394,10 +476,23 @@ header > a:hover, header > div > a:hover{
 }
 @media (min-width: 1500px){
     #section_two, .section-std{
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     #section_two > div, .section-std > div{
         width: 800px;
+    }
+}
+@-webkit-keyframes flash {
+    from{
+        margin-right: -350px;
+        display: none;
+    }
+    to{
+        margin-right: 10px;
+        display: -webkit-box;
+        display: flex;
     }
 }
 @keyframes flash {
@@ -407,14 +502,20 @@ header > a:hover, header > div > a:hover{
     }
     to{
         margin-right: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
 
 /* Уведомление о печеньях(куки)  */
 .cookie_alert_box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-top: -130px;
 }
 .cookie_alert{
@@ -422,10 +523,15 @@ header > a:hover, header > div > a:hover{
     background: #171720;
     z-index: 100;
     border-radius: 8px;
-    box-shadow: 0px 4px 18px rgba(32, 32, 44, 0.2);
+    -webkit-box-shadow: 0px 4px 18px rgba(32, 32, 44, 0.2);
+            box-shadow: 0px 4px 18px rgba(32, 32, 44, 0.2);
     color: white;    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
 }
 .cookie_alert > img{
@@ -441,9 +547,16 @@ header > a:hover, header > div > a:hover{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
 }
 .cookie_alert_close{
     position: relative;
@@ -452,9 +565,16 @@ header > a:hover, header > div > a:hover{
     height: 15px;
     outline: none;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     padding: 0;
     margin-top: -2px;
 }
@@ -465,17 +585,30 @@ header > a:hover, header > div > a:hover{
     border-radius: 5px;
 }
 .cookie_alert_close > div:last-child{
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 .cookie_alert_close > div:first-child{
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     margin-bottom: -2px;
 }
 .cookie_alertSmallBox{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 10px;
 }
 .cookie_alertSmallBoxText{
@@ -494,6 +627,8 @@ header > a:hover, header > div > a:hover{
     background: #24242c;
     border-radius: 5px;
     margin-top: -1px;
+    -webkit-transition: all .2s ease-in-out 0s;
+    -o-transition: all .2s ease-in-out 0s;
     transition: all .2s ease-in-out 0s;    
 }
 .cookie_alertText_Confirm{
@@ -524,15 +659,26 @@ header > a:hover, header > div > a:hover{
 
 /* Блок третий */
 #section_three{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     overflow: hidden;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .section_three_images{    
     height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 }
 #section_three_images_phone{
@@ -541,6 +687,8 @@ header > a:hover, header > div > a:hover{
     
 }
 #section_three_images_pattern{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 800px;
     /* margin-left: 100px; */
@@ -570,7 +718,9 @@ header > a:hover, header > div > a:hover{
     .section_three_images{
         width: 100vw;
         margin: 0;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #section_three_images_phone{
         margin: 0;
@@ -587,6 +737,8 @@ header > a:hover, header > div > a:hover{
         display: none;
     }
     #cookie_alert_altclose{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .fixCookes{
@@ -606,6 +758,8 @@ header > a:hover, header > div > a:hover{
         margin: 0 50px 0 50px;
     }
     #cookie_alert_close{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -613,8 +767,12 @@ header > a:hover, header > div > a:hover{
     background-color: #F8F8F8;
 }
 .section_three_one_overText{    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .section_three_one_overText > span{
     width: 800px;
@@ -624,7 +782,20 @@ header > a:hover, header > div > a:hover{
 }
 #carusel_vabank{    
     height: 700px;
-    animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+    -webkit-animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+            animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+}
+
+@-webkit-keyframes carusel_fadeIn{
+    from {        
+        right: -100vw;        
+    }
+    50%{
+        right: -50vw;
+    }
+    to{
+        right: 0;
+    }
 }
 
 @keyframes carusel_fadeIn{
@@ -641,8 +812,13 @@ header > a:hover, header > div > a:hover{
 
 /* Блок четвертый */
 #section_four{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     background-color: #A6CC2D;
     /* padding-bottom: 50px; */
 }
@@ -659,8 +835,13 @@ header > a:hover, header > div > a:hover{
 
 /* Блок пятый */
 #section_five{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     background-color: #0A083A;
 }
 
@@ -670,10 +851,19 @@ header > a:hover, header > div > a:hover{
     margin: 50px 0 50px 0;    
 }
 #footer > div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
 }
 #footer > div > div{
     margin: 25px 0 0 0;
@@ -702,9 +892,16 @@ section .rightTextAndPhone .rightPhone{
     position: relative;
 }
 section .rightTextAndPhone{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin-top: -525px;
     margin-right: -95px;
 }
@@ -743,8 +940,13 @@ section .rightTextAndPhone .rightText > span{
         margin: 50px 15px 50px 0;
     }
     #footer .one{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: column nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
         margin-left: -15px;
         margin-bottom: 11px;
     }
@@ -752,21 +954,31 @@ section .rightTextAndPhone .rightText > span{
         margin: 0 18px 25px 18px;
     }
     #footer > div {
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         margin-left: 15px
     }
     #footer > div > .coperate{
         display: none;
     }
     .coperate_f{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     #footer .two > .telegram_f{
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
     #footer .two{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 100%;
     }
     #footer > div > div{
@@ -808,15 +1020,29 @@ section .rightTextAndPhone .rightText > span{
     margin: 50px 0 50px 0;    
 }
 #footer > div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
 }
 #footer > div > div{
     margin: 25px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 #footer .one{
     margin-top: 0;
@@ -837,8 +1063,13 @@ section .rightTextAndPhone .rightText > span{
         margin: 50px 15px 50px 0;
     }
     #footer .one{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: column nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
         margin-left: -15px;
         margin-bottom: 11px;
     }
@@ -846,10 +1077,14 @@ section .rightTextAndPhone .rightText > span{
         margin: 0 18px 25px 18px;
     }
     #footer > div {
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         margin-left: 15px
     }
     .coperate_f{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     #footer > div > div{
