@@ -1147,3 +1147,7 @@ section .rightTextAndPhone .rightText > span{
         margin-top: 830px;
     }
 }
+
+.carousel-cell{
+    margin-right: 18px;
+}
