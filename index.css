@@ -782,6 +782,7 @@ header > a:hover, header > div > a:hover{
     justify-content: center;
     align-items: center;
     margin: 80px 0 80px 0;
+    flex-flow: row wrap;
 }
 .section_three_one_sub  .text{
     font-family: Montserrat;
