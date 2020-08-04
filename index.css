@@ -777,6 +777,20 @@ header > a:hover, header > div > a:hover{
 .section_three_one_overText > span{
     width: 800px;
 }
+.section_three_one_sub  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 80px 0;
+}
+.section_three_one_sub  .text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    color: #000000;
+}
 .vabank_scrins{
     height: 630px;
 }
