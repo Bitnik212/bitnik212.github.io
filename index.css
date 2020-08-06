@@ -765,6 +765,7 @@ header > a:hover, header > div > a:hover{
 }
 #section_three_one{
     background-color: #F8F8F8;
+    overflow-x: hidden;
 }
 .section_three_one_overText{    
     display: -webkit-box;    
@@ -797,9 +798,30 @@ header > a:hover, header > div > a:hover{
 }
 #carusel_vabank{    
     height: 700px;
+    display: flex;
+    flex-flow: row nowrap;
+   
     -webkit-animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
             animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
 }
+#carusel_vabank > .img {
+    margin: 0 9px 0 9px;
+    
+}
+@media (min-width: 830px){
+
+}
+@media (min-width: 830px) and (max-width: 1500px){
+    #carusel_vabank{
+        margin-left: 280px;
+    }
+}
+@media (min-width: 1500px){
+    #carusel_vabank{
+        justify-content: center;
+    }
+}
+
 
 @-webkit-keyframes carusel_fadeIn{
     from {        
