@@ -34,7 +34,13 @@
                     <div class="tag">Исследовании</div>
                     <div class="tag">Пользовательских тестированиях</div>
                 </div>
-                <div class="section-text">Я графический дизайнер и дизайнер интерфейсов. Интересуюсь векторной и трехмерной графикой, монтажом видео, анимацией, фотографией.<br><br> Создаю для компаний логотипы и фирменный стиль их продуктов. Больше всего люблю интерфейсы веб сайтов и мобильных устройств. <br><br>Перед началом проекта, я внимательно изучаю задачу и берусь за нее только если буду уверен что буду полезен.</div>
+                <div class="section-text">
+                    Помогаю бизнесу находить общий язык с аудиторией через дизайн. Создаю макеты в Figma, рисую иллюстрации и иконки, провожу А/B тестирования в Google Analytics, поднимаю конверсию, составляю user-flow, провожу пользовательские тестирования. 
+                    <br><br> 
+                    Понимаю принципы разработки, могу сверстать сайт самостоятельно. Отличаю bootstrap от flexbox, общаюсь с разработчиками и учитываю ограничения проекта в своих макетах.
+                    <br><br>
+                    Фиксирую требования, умею рассказывать свою точку зрения и слушать чужую, помогал продать проекты на этапе пресейла. Опыт работы с «проблемными» клиентами.
+                </div>
             </div>
         </section>
         <section id="section_two" class="section-std">
@@ -131,11 +137,10 @@
                 <span>В приложении нет ничего лишнего, только полезные разделы: аккаунты, платежи, история платежей, чат подержки.</span>
             </div>
             <div id="carusel_vabank" class="">
-                <div class="img"><img class="vabank_scrins" src="images/vokapp_1.png" alt="Вокапп скриншот" /></div>
-                <div class="img"><img class="vabank_scrins" src="images/vokapp_2.png" alt="Вокапп скриншот" /></div>
-                <div class="img"><img class="vabank_scrins" src="images/vokapp_3.png" alt="Вокапп скриншот" /></div>
-                <div class="img"><img class="vabank_scrins" src="images/vokapp_4.png" alt="Вокапп скриншот" /></div>
                 <div class="img"><img class="vabank_scrins" src="images/vokapp_5.png" alt="Вокапп скриншот" /></div>
+                <div class="img"><img class="vabank_scrins" src="images/vokapp_4.png" alt="Вокапп скриншот" /></div>
+                <div class="img"><img class="vabank_scrins" src="images/vokapp_3.png" alt="Вокапп скриншот" /></div>
+                <div class="img"><img class="vabank_scrins" src="images/vokapp_1.png" alt="Вокапп скриншот" /></div>
             </div>
         </section>    
         <!-- <div class="section_three_one_sub adaptive-std">
@@ -213,13 +218,13 @@
         $(function () {
             var controller = new ScrollMagic.Controller();
             clntwidth = document.getElementById('carusel_vabank').offsetWidth 
-            if (clntwidth >= 1665){
-                clntwidth = -1665
+            if (clntwidth >= 1332){
+                clntwidth = -1332
             } else {
                 clntwidth *= -1 
             }
             console.log("clntwidth = "+clntwidth)
-            meme = (1665 +  clntwidth) * -1
+            meme = (1332 +  clntwidth) * -1
             console.log("meme = "+ meme)
             var scene = new ScrollMagic.Scene({
                 triggerElement: "#carusel_vabank", 
