@@ -80,6 +80,13 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+.section-text.text-gray{
+    color: #A8A9AA !important;
+}
+.section-text.mb-25{
+    margin-bottom: 25px !important;
+}
+
 
 /* HEADER */
 header{
@@ -879,7 +886,7 @@ header > a:hover, header > div > a:hover{
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    background-color: #0A083A;
+    background-color: #030A18;
 }
 
 /* FOOTER */
