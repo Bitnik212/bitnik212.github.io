@@ -118,6 +118,13 @@ header > a:hover, header > div > a:hover{
     transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
     color: #c4c4c4;
 }
+footer  a:hover, footer > div > a:hover{
+    -webkit-transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    color: #c4c4c4;
+}
+
 .leftBox{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166,13 +173,7 @@ header > a:hover, header > div > a:hover{
     border-radius: 34px;
     margin-left: 20px;
 }
-.sendTelegram:hover{
-    background: -o-linear-gradient(8.86deg, #3eaee3 0%, #56c9fd 100%);
-    background: linear-gradient(81.14deg, #3eaee3 0%, #56c9fd 100%);
-    -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-    -o-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-    transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-}
+
 .sendTelegram > span{
     color: white ;
     padding: 0;
@@ -368,6 +369,36 @@ header > a:hover, header > div > a:hover{
     }
 }
 
+/* Блок WatchFitness */
+#wf_section{
+    
+}
+#wf_section .section_three_images_phone{
+    margin-top: 30px;
+}
+
+@media (min-width: 1280px){
+    #wf_section{
+        /* background-image: url("images/wf_bg.png"); */
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120%;
+    }
+}
+@media (min-width: 1300px){
+    #wf_section{
+        
+        background-size: 100% !important;
+    }
+}
+@media (max-width: 410px){
+    #wf_section > div > .title{
+        word-break: break-word;
+    }
+}
+
+
 /* Блок второй */
 #section_two{
     display: -webkit-box;
@@ -445,7 +476,8 @@ header > a:hover, header > div > a:hover{
     margin: 20px 20px 0 20px;
 }
 .scrollBox_two_bg{
-    background: url("images/Rentby_bg.png") top no-repeat;
+    /* background: url("images/Rentby_bg.png") top no-repeat; */
+    background: rgb(28 134 252);
     background-position: right;
     background-size: cover;
     z-index: -999;
@@ -688,7 +720,7 @@ header > a:hover, header > div > a:hover{
             align-items: center;
     
 }
-#section_three_images_phone{
+.section_three_images_phone{
     width: 250px;
     margin-left: 100px;
     
@@ -710,7 +742,7 @@ header > a:hover, header > div > a:hover{
         background: none;
         margin: 0 -300px 0 0;
     }
-    #section_three_images_phone{
+    .section_three_images_phone{
         margin: 0 100px 0 00px;
     }
     #section_three_images_pattern{
@@ -729,16 +761,16 @@ header > a:hover, header > div > a:hover{
             -ms-flex-pack: center;
                 justify-content: center;
     }
-    #section_three_images_phone{
+    .section_three_images_phone{
         margin: 0;
     }
     #section_three_images_pattern{
         display: none;
     }
     .section_three_images{
-        background: url("images/Pattern.png")  top repeat; 
+        /* background: url("images/Pattern.png")  top repeat; 
         background-position: right;
-        background-size: cover;
+        background-size: cover; */
     }
     #cookie_alert_close{
         display: none;
@@ -761,7 +793,7 @@ header > a:hover, header > div > a:hover{
         margin-left: 500px;
         background-size: contain;
     }
-    #section_three_images_phone{
+    .section_three_images_phone{
         margin: 0 50px 0 50px;
     }
     #cookie_alert_close{
@@ -770,7 +802,7 @@ header > a:hover, header > div > a:hover{
         display: flex;
     }
 }
-#section_three_one{
+#section_three_one, .section_wf_screens{
     background-color: #F8F8F8;
     overflow-x: hidden;
 }
@@ -803,7 +835,7 @@ header > a:hover, header > div > a:hover{
 .vabank_scrins{
     height: 630px;
 }
-#carusel_vabank{    
+#carusel_vabank, #carusel_wf{    
     height: 700px;
     display: flex;
     flex-flow: row nowrap;
@@ -811,7 +843,7 @@ header > a:hover, header > div > a:hover{
     -webkit-animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
             animation: carusel_fadeIn cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
 }
-#carusel_vabank > .img {
+#carusel_vabank > .img,  #carusel_wf > .img{
     margin: 0 9px 0 9px;
     
 }
@@ -819,12 +851,12 @@ header > a:hover, header > div > a:hover{
 
 }
 @media (min-width: 830px) and (max-width: 1500px){
-    #carusel_vabank{
+    #carusel_vabank, #carusel_wf{
         margin-left: 280px;
     }
 }
 @media (min-width: 1500px){
-    #carusel_vabank{
+    #carusel_vabank, #carusel_wf{
         justify-content: center;
     }
 }
@@ -1181,3 +1213,11 @@ section .rightTextAndPhone .rightText > span{
 .carousel-cell{
     margin-right: 18px;
 }
+
+
+@media (min-width: 1300px){
+    #section_six > .section-std{
+        margin-top: 100px;
+    }
+}
+

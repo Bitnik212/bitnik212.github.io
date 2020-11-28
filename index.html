@@ -46,6 +46,27 @@
                 </div>
             </div>
         </section>
+        <section id="wf_section" class="section-std">
+            <div>
+                <div class="title">Мобильное приложение «WatchFitness»</div>
+                <div class="section-text" style="color: #A8A9AA; margin-bottom: 25px;">ВотчФитнес — поможет накачать пресс, сбросить лишний вес, подберет диету и покажет данные о состоянии здоровья</div>
+                <div class="section-text" style="color: #A8A9AA; margin-bottom: 25px;">В приложении пользователи проходят тренировки, выполняют испытания, отслеживают сон, шаги и калории</div>
+                <div style="display: flex; justify-content: center;">
+                    <img class="section_three_images_phone" src="images/wf1.png" loading="lazy" alt="скрин «WatchFitness» на iphone">
+                </div>
+                
+            </div>
+        </section>
+        <section class="" style="overflow-x: hidden;">
+            <div class="section_three_one_overText scrollBox_overNavText adaptive-std" >
+                <span>На главном экране — максисмум полезных функций и информации, изменяйте и добавляйте карточки по желанию, на те, которые нужны постоянно</span>
+            </div>
+            <div id="carusel_wf" class="">
+                <div class="img"><img class="vabank_scrins" loading=lazy src="images/wf2.png" alt="Вокапп скриншот" /></div>
+                <div class="img"><img class="vabank_scrins" loading=lazy src="images/wf3.png" alt="Вокапп скриншот" /></div>
+                <div class="img"><img class="vabank_scrins" loading=lazy src="images/wf4.png" alt="Вокапп скриншот" /></div>
+            </div>
+        </section>  
         <section id="section_two" class="section-std">
             <div>
                 <div class="title">Агрегатор офисов «Рентби»</div>
@@ -131,8 +152,8 @@
                 <div class="section-text" style="color: #A8A9AA; margin-bottom: 25px;">Приложение позволяет интересно провести время за изучением новых слов в тематических наборах, <br>проверить свои знания в тестах, и развлечься проходя игры на знание слов.</div>             
             </div>
             <div class="section_three_images" style="margin-top: 50px; margin-bottom: 0px;">
-                <img id="section_three_images_phone" loading=lazy src="images/Vokapp_phone.png" alt="Скриншот на IPhone" />
-                <img id="section_three_images_pattern" loading=lazy src="images/Pattern.png">
+                <img class="section_three_images_phone" loading=lazy src="images/Vokapp_phone.png" alt="Скриншот на IPhone" />
+                <!-- <img id="section_three_images_pattern" loading=lazy src="images/Pattern.png"> -->
             </div>
         </section>
         <section id="section_three_one" class="">
@@ -232,7 +253,7 @@
                     <a class="email_f" href="mailto:Dima1Cohin@gmail.com">Dima1Cohin@gmail.com</a>
                     <a class="telegram_f" href="tg://resolve?domain=Uzzaw">Telegram</a>
                     <a class="telegram_ff" href="tg://resolve?domain=Bitnik212">Developed by Bit</a>  
-                    <div class="coperate_fF">©2020</div>
+                    <a class="coperate_fF">©2020</a>
                 </div>                               
             </div>            
         </footer>
@@ -260,6 +281,27 @@
                 duration: 700
                 })
                 .setTween(TweenMax.to("#carusel_vabank", 1, {css:{transform: "translateX("+ meme +"px)"}}))
+                // .addIndicators() // uncoment for debug (requires plugin debug.addIndicators.js)
+                .addTo(controller);
+        })
+    </script>
+    <script>
+        $(function () {
+            var controller = new ScrollMagic.Controller();
+            clntwidth = document.getElementById('carusel_wf').offsetWidth 
+            if (clntwidth >= 1000){
+                clntwidth = -1000
+            } else {
+                clntwidth *= -1 
+            }
+            // console.log("clntwidth = "+clntwidth)
+            meme = (1000 +  clntwidth) * -1
+            // console.log("meme = "+ meme)
+            var scene = new ScrollMagic.Scene({
+                triggerElement: "#carusel_wf", 
+                duration: 700
+                })
+                .setTween(TweenMax.to("#carusel_wf", 1, {css:{transform: "translateX("+ meme +"px)"}}))
                 // .addIndicators() // uncoment for debug (requires plugin debug.addIndicators.js)
                 .addTo(controller);
         })
