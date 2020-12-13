@@ -454,8 +454,8 @@ footer  a:hover, footer > div > a:hover{
     width: -webkit-fill-available;   
 }
 .scrollBox_nav_img{
-    overflow-y: scroll;
-    height: 480px;
+    /* overflow-y: scroll; */
+    /* height: 480px; */
     z-index: 90;
 }
 .scrollBox_overNavText{
@@ -979,8 +979,8 @@ section .rightTextAndPhone{
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-top: -525px;
-    margin-right: -95px;
+    margin-bottom: -525px;
+    margin-right: -100px;
 }
 section .rightTextAndPhone .rightText{
     margin-right: -118px;
