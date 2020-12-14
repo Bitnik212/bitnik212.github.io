@@ -81,7 +81,7 @@ body{
     overflow-x: hidden;
 }
 .section-text.text-gray{
-    color: #A8A9AA !important;
+    /* color: #A8A9AA !important; */
 }
 .section-text.mb-25{
     margin-bottom: 25px !important;
@@ -267,7 +267,7 @@ footer  a:hover, footer > div > a:hover{
 
 /* Шаблон и первый блок */
 #main-section, .section-std{
-    margin: 200px 300px 100px 300px;
+    margin: 100px 300px 100px 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;    
@@ -281,7 +281,7 @@ footer  a:hover, footer > div > a:hover{
     font-weight: normal;
     font-size: 48px;
     line-height: 49px;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
     word-break: break-word;
 }
 .tagsUnderTitle{
@@ -526,7 +526,7 @@ footer  a:hover, footer > div > a:hover{
 }
 @media (max-width: 830px){
     #section_two > div , .section-std > div{
-        margin: 36px 16px 150px 16px;
+        margin: 36px 16px 30px 16px;
     }
     .scrollBox_nav_img{
         height: unset;
@@ -1263,21 +1263,28 @@ section .rightTextAndPhone .rightText > span{
 .phones_screens_1{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center;
-    margin-bottom: 40px;
+    justify-content: space-evenly;
+    margin: 30px 40px 80px 40px;
 }
 .phones_screens_1 > .phone_screen{
     display: flex; 
     align-items: center; 
     flex-direction: column;
+    margin-bottom: 40px;
 }
 .phone_screen > .downtext{
     margin-top: 20px; 
     font-size: 16px;
-    font-family: var(--Inter);
+    font-family: var(--Object-Sans);
     font-weight: 300;
+    
 }
 
+@media (min-width: 1300px){
+    .phone_screen > .downtext{
+        margin-right: 100px;
+    }
+}
 
 .prian_bg{
     --height-bg: 700px;
@@ -1312,10 +1319,15 @@ section .rightTextAndPhone .rightText > span{
 @media (min-width: 1920px){
     .prian_bg{
         
-        background-size: 65%;
+        background-size: 70%;
     }
 }
 @media (min-width: 2500px){
+    .prian_bg{
+        background-size: 60%;
+    }
+}
+@media (min-width: 3000px){
     .prian_bg{
         background-size: 55%;
     }
@@ -1325,8 +1337,8 @@ section .rightTextAndPhone .rightText > span{
         background-size: 45%;
     }
 }
-@media (min-width: 3000px){
-    .prian_bg{
-        background-size: 35%;
-    }
+
+
+.section-std .m-7-3{
+    margin: 70px 0 30px 0;
 }
