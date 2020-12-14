@@ -282,6 +282,7 @@ footer  a:hover, footer > div > a:hover{
     font-size: 48px;
     line-height: 49px;
     margin-bottom: 35px;
+    word-break: break-word;
 }
 .tagsUnderTitle{
     display: -webkit-box;
@@ -370,6 +371,19 @@ footer  a:hover, footer > div > a:hover{
 }
 
 /* Блок WatchFitness */
+.wf_bg{
+    --margin-top-bg: 200px;
+    --bg-height: 1080px;
+    background-image: url('images/wf_bg1.webp'); 
+    height: var(--bg-height); 
+    background-origin: border-box; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%; 
+    margin-bottom: calc((var(--bg-height) + var(--margin-top-bg)) * -1);
+    margin-top: var(--margin-top-bg);
+    transition: 0.5s;
+}
 .wf .section_three_images_phone{
     width: 250px;
     height: 500px;
@@ -378,19 +392,34 @@ footer  a:hover, footer > div > a:hover{
     margin-top: 30px;
 }
 
-@media (min-width: 1280px){
-    #wf_section{
-        /* background-image: url("images/wf_bg.png"); */
-        background-origin: border-box;
-        background-repeat: no-repeat;
-        background-position: center;
+@media(min-width: 1280px){ /*включить  фон*/
+    .wf_bg{
+        background-size: 140%;
+    }
+}
+@media(min-width: 1920px){ /*включить  фон*/
+    .wf_bg{
         background-size: 120%;
     }
 }
-@media (min-width: 1300px){
-    #wf_section{
-        
-        background-size: 100% !important;
+@media (min-width: 2000px){/*включить  фон*/
+    .wf_bg{
+        background-size: 100%;
+    }
+}
+@media (min-width: 3500px){/*включить  фон*/
+    .wf_bg{
+        background-size: 75%;
+    }
+}
+@media (min-width: 4000px){/*включить  фон*/
+    .wf_bg{
+        background-size: 50%;
+    }
+}
+@media(max-width: 1000px){ /*выключить  фон*/
+    .wf_bg{
+        background: none;
     }
 }
 @media (max-width: 410px){
@@ -417,6 +446,7 @@ footer  a:hover, footer > div > a:hover{
 
 /* Шаблон скролбокса */
 .scrollBox_nav_open{
+    /* box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc; */
     background: #EFF0F2;
     height: 20px;
     border-radius: 10px 10px 0 0;
@@ -452,11 +482,19 @@ footer  a:hover, footer > div > a:hover{
 .scrollBox_nav_img > img{    
     max-width: 100%; 
     width: -webkit-fill-available;   
+    /* box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc; */
 }
 .scrollBox_nav_img{
     /* overflow-y: scroll; */
     /* height: 480px; */
     z-index: 90;
+}
+.boxshadow{
+    box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+}
+
+.scrollBox_one{
+    /* box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc; */
 }
 .scrollBox_overNavText{
     font-family: var(--Object-Sans);
@@ -474,7 +512,7 @@ footer  a:hover, footer > div > a:hover{
     font-size: 14px;
     line-height: 25px;
     color: #A8A9AA;
-    margin: 20px 20px 0 20px;
+    margin: 20px;
 }
 .scrollBox_two_bg{
     /* background: url("images/Rentby_bg.png") top no-repeat; */
@@ -1222,4 +1260,73 @@ section .rightTextAndPhone .rightText > span{
     }
 }
 
+.phones_screens_1{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.phones_screens_1 > .phone_screen{
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+}
+.phone_screen > .downtext{
+    margin-top: 20px; 
+    font-size: 16px;
+    font-family: var(--Inter);
+    font-weight: 300;
+}
 
+
+.prian_bg{
+    --height-bg: 700px;
+    --margin-top-bg: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/prian_bg.png");
+    height: var(--height-bg);
+    margin-bottom: calc((var(--height-bg) + var(--margin-top-bg)) * -1);
+    /* margin-top: calc(var(--margin-top-bg) * -1); */
+    transition: 0.5s;
+}
+
+@media (max-width: 1100px){
+    .prian_bg{
+        background: none;
+    }
+}
+@media (min-width: 1301px){
+    .prian_bg{
+        --margin-top-bg: 100px;
+        background-size: 90%;
+    }
+}
+@media (min-width: 1500px){
+    .prian_bg{
+        /* --margin-top-bg: 100px; */
+        background-size: 80%;
+    }
+}
+@media (min-width: 1920px){
+    .prian_bg{
+        
+        background-size: 65%;
+    }
+}
+@media (min-width: 2500px){
+    .prian_bg{
+        background-size: 55%;
+    }
+}
+@media (min-width: 3000px){
+    .prian_bg{
+        background-size: 45%;
+    }
+}
+@media (min-width: 3000px){
+    .prian_bg{
+        background-size: 35%;
+    }
+}
